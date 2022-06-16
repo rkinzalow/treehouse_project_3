@@ -1,0 +1,167 @@
+/* ============= Gobal styles ============= */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: auto;
+    font-family: 'Caveat', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+h3 {
+    color: #2d3945;
+    text-align: center;
+}
+p {
+    color: rgb(0, 0, 0, 0.4);
+    text-align: center;
+}
+fieldset {
+    border: none;
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+
+}
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+    padding: 5px 0px 5px;
+}
+ul {
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+/* ============= header styles ============= */
+header {
+    text-transform: uppercase;
+    background-color: #2d3945;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    padding: 1em 0 1em;
+    font-size: 1.5em;
+}
+.header {
+    border-bottom: 5px solid #2d3945;
+    width: 95%;
+    max-width: 1024px;
+    margin: auto;
+}
+/* ============= Contact styles ============= */
+.container {
+    border-top: 2px solid #2d3945;
+    margin: 3px auto;
+    width: 95%;
+    max-width: 1024px;
+    color:#2d3945;
+}
+.contact {
+    margin: auto;
+    align-items: center;
+    align-content: center;
+}
+
+
+input, select, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #eff0f1;
+}
+input:focus, textarea:focus, select:focus {
+    border: 3px solid #46698b;
+    outline: none;
+}
+input:valid {
+    background-color: #eff0f1;
+}
+::placeholder {
+    color: rgba(0, 0, 0, .3);
+    text-align: right;
+}
+select {
+    color: black;
+    text-align: right;
+}
+select:required:invalid {
+    color: rgba(0, 0, 0, .3)
+}
+option {
+    color: black;
+    text-align: left;
+}
+
+.flex-top {
+    width: 100%;
+}
+.flex-top li, 
+.flex-bottom li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.flex-top > li > label
+ {
+    padding-bottom: 5px;
+}
+.flex-top > li > input, select {
+    width: 100%;
+}
+.flex-top > li {
+    margin-bottom: 20px;
+}
+.flex-top li:last-child {
+    width: 50%;
+}
+/* ============= Newsletter styles ============= */
+.flex-bottom {
+    padding: 5px;
+    color: rgba(0, 0, 0, .4);
+    width: 100%;
+}
+.flex-bottom > li > label {
+    padding: .75em 0 .75em;
+}
+.news {
+    border-top: 2px solid #2d3945;
+    padding-top: 20px;
+}
+textarea {
+    width: 100%;
+}
+textarea::placeholder {
+    text-align: left;
+}
+input[type=submit] {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #4ebbb5;
+    color: white;
+}
+.flex-bottom > li:last-child {
+    justify-content: center;
+    font-weight: 700;
+}
+/* ============= Larger screen ============= */
+@media only screen and (min-width: 768px) {
+    .flex-top > li > label {
+        width: 30%;
+    }
+
+    .flex-top > li > input,
+    .flex-top > li > select {
+        width: 70%;
+    }
+    .flex-top > li:last-child {
+        width: 100%;
+    }
+    #zip {
+        width: 30%;
+    }
+ 
+}
